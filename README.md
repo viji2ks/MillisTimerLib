@@ -10,7 +10,9 @@ Library to use the Millis function as a task scheduler
 MillisTimerLib(long delayTime);
 
 //Returns true every time cycle
-bool timer();
+bool timer();    // timer continuos no user control to off 
+bool timer(true); // enable customer timer on
+bool timer(false);  // disable timer off
 
 //Returns the delay count in milliseconds
 long timerCount();
@@ -23,6 +25,7 @@ long getDelay();
 
 //Reset timer counter
 void reset();
+void reset(3000); // reset the timer with new delay time of 3000ms or 3 sec
 ```
 
 Author : Fellipe Couto [ http://www.efeitonerd.com.br ]

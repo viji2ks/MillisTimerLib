@@ -18,7 +18,6 @@
 
 unsigned long _oldTime = 0;
 unsigned long _time = 0;
-bool _on-off = true; //auto timer() default
 
 bool _on-off = true;    // key bool for timer out enable other wise can't stop timer.timer() return bool; 
 
